@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "47183256-98559ed7-5107-4dfb-a649-c2dfd7afe5ca",
+		"name": "Product Master",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Product Get",
+			"id": "47183256-53768485-1c01-454a-9ad6-4d5bf2904d64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Product Create",
+			"id": "47183256-aff426b2-29e6-4a96-ba36-2cfa1016f000",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "2JgYiB0ErCZr4o2_9gnu1Q==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Product\": \"TEST_API_ROH\",\r\n  \"ProductType\": \"ROH\",\r\n  \"CreationDateTime\": \"2025-11-10T15:51:04Z\",\r\n//   \"IsMarkedForDeletion\": true,\r\n//   \"CrossPlantStatus\": \"string\",\r\n//   \"CrossPlantStatusValidityDate\": \"\",\r\n//   \"ProductOldID\": \"string\",\r\n  \"GrossWeight\": 0,\r\n  \"WeightUnit\": \"KG\",\r\n  \"WeightISOUnit\": \"KGM\",\r\n  \"ProductGroup\": \"RAU\",\r\n  \"BaseUnit\": \"ST\",\r\n  \"BaseISOUnit\": \"PCE\",\r\n  \"ItemCategoryGroup\": \"NORM\",\r\n  \"NetWeight\": 0,\r\n//   \"Division\": \"string\",\r\n//   \"VolumeUnit\": \"string\",\r\n//   \"VolumeISOUnit\": \"string\",\r\n//   \"ProductVolume\": 0,\r\n//   \"AuthorizationGroup\": \"string\",\r\n//   \"ANPCode\": \"string\",\r\n//   \"SizeOrDimensionText\": \"string\",\r\n//   \"IndustryStandardName\": \"string\",\r\n//   \"ProductStandardID\": \"string\",\r\n//   \"InternationalArticleNumberCat\": \"string\",\r\n//   \"ProductIsConfigurable\": false,\r\n//   \"IsBatchManagementRequired\": false,\r\n//   \"ExternalProductGroup\": \"string\",\r\n//   \"CrossPlantConfigurableProduct\": \"string\",\r\n//   \"SerialNoExplicitnessLevel\": \"string\",\r\n  \"IsApprovedBatchRecordReqd\": false,\r\n//   \"HandlingIndicator\": \"string\",\r\n//   \"WarehouseProductGroup\": \"string\",\r\n//   \"WarehouseStorageCondition\": \"string\",\r\n//   \"StandardHandlingUnitType\": \"string\",\r\n//   \"SerialNumberProfile\": \"string\",\r\n//   \"IsPilferable\": false,\r\n//   \"IsRelevantForHzdsSubstances\": false,\r\n//   \"QuarantinePeriod\": 0,\r\n//   \"TimeUnitForQuarantinePeriod\": \"string\",\r\n//   \"QuarantinePeriodISOUnit\": \"string\",\r\n//   \"QualityInspectionGroup\": \"string\",\r\n//   \"HandlingUnitType\": \"string\",\r\n//   \"HasVariableTareWeight\": false,\r\n//   \"MaximumPackagingLength\": 0,\r\n//   \"MaximumPackagingWidth\": 0,\r\n//   \"MaximumPackagingHeight\": 0,\r\n//   \"MaximumCapacity\": 0,\r\n//   \"OvercapacityTolerance\": 0,\r\n//   \"UnitForMaxPackagingDimensions\": \"string\",\r\n//   \"MaxPackggDimensionISOUnit\": \"string\",\r\n//   \"BaseUnitSpecificProductLength\": 0,\r\n//   \"BaseUnitSpecificProductWidth\": 0,\r\n//   \"BaseUnitSpecificProductHeight\": 0,\r\n//   \"ProductMeasurementUnit\": \"string\",\r\n//   \"ProductMeasurementISOUnit\": \"string\",\r\n//   \"ArticleCategory\": \"string\",\r\n  \"IndustrySector\": \"M\",\r\n//   \"DangerousGoodsIndProfile\": \"string\",\r\n//   \"ProductDocumentChangeNumber\": \"string\",\r\n//   \"ProductDocumentPageCount\": \"string\",\r\n//   \"ProductDocumentPageNumber\": \"string\",\r\n  \"DocumentIsCreatedByCAD\": false,\r\n//   \"ProductionOrInspectionMemoTxt\": \"string\",\r\n//   \"ProductionMemoPageFormat\": \"string\",\r\n  \"ProductIsHighlyViscous\": true,\r\n  \"TransportIsInBulk\": true,\r\n  \"ProdEffctyParamValsAreAssigned\": false,\r\n  \"ProdIsEnvironmentallyRelevant\": false,\r\n//   \"LaboratoryOrDesignOffice\": \"string\",\r\n//   \"PackagingProductGroup\": \"string\",\r\n// //   \"PackingReferenceProduct\": \"string\",\r\n//   \"BasicProduct\": \"string\",\r\n//   \"ProductDocumentNumber\": \"string\",\r\n//   \"ProductDocumentVersion\": \"string\",\r\n//   \"ProductDocumentType\": \"string\",\r\n//   \"ProductDocumentPageFormat\": \"string\",\r\n//   \"ProdChmlCmplncRelevanceCode\": \"string\",\r\n//   \"DiscountInKindEligibility\": \"string\",\r\n//   \"ProductManufacturerNumber\": \"string\",\r\n//   \"ManufacturerNumber\": \"string\",\r\n//   \"ManufacturerPartProfile\": \"string\",\r\n//   \"OwnInventoryManagedProduct\": \"string\",\r\n\r\n   \"_ProductDescription\": [\r\n      {\r\n        \"Product\": \"TEST_API_ROH\",\r\n         \"Language\": \"EN\",\r\n         \"ProductDescription\": \"Text Product throu api\"\r\n      }\r\n   ]\r\n\r\n// //   \"_ProductPlant\": [\r\n// //     {\r\n// //       \"Plant\": \"string\",\r\n// //       \"ProfileCode\": \"string\",\r\n// //       \"ProfileValidityStartDate\": \"2017-04-13\",\r\n// //       \"FiscalYearVariant\": \"string\",\r\n// //       \"PeriodType\": \"string\",\r\n// //       \"ProfitCenter\": \"string\",\r\n// //       \"IsMarkedForDeletion\": true,\r\n// //       \"ConfigurableProduct\": \"string\",\r\n// //       \"StockDeterminationGroup\": \"string\",\r\n// //       \"IsBatchManagementRequired\": true,\r\n// //       \"SerialNumberProfile\": \"string\",\r\n// //       \"IsNegativeStockAllowed\": true,\r\n// //       \"ProductCFOPCategory\": \"string\",\r\n// //       \"ProductIsExciseTaxRelevant\": true,\r\n// //       \"GoodsIssueUnit\": \"string\",\r\n// //       \"GoodsIssueISOUnit\": \"string\",\r\n// //       \"DistrCntrDistributionProfile\": \"string\",\r\n// //       \"ProductIsCriticalPrt\": true,\r\n// //       \"ProductLogisticsHandlingGroup\": \"string\",\r\n// //       \"ProductFreightGroup\": \"string\",\r\n// //       \"OriginalBatchReferenceProduct\": \"string\",\r\n// //       \"OriglBatchManagementIsRequired\": \"string\",\r\n// //       \"BaseUnit\": \"string\",\r\n// //       \"ProductMinControlTemperature\": 0,\r\n// //       \"ProductMaxControlTemperature\": 0,\r\n// //       \"ProductControlTemperatureUnit\": \"string\",\r\n// //       \"ProdCtrlTemperatureUnitISOCode\": \"string\",\r\n\r\n// //       \"_ProductPlantStorageLocation\": [\r\n// //         {\r\n// //           \"StorageLocation\": \"string\",\r\n// //           \"WarehouseStorageBin\": \"string\",\r\n// //           \"IsMarkedForDeletion\": true\r\n// //         }\r\n// //       ]\r\n// //     }\r\n//   ],\r\n\r\n//   \"_ProductUnitOfMeasure\": [\r\n//     {\r\n//       \"AlternativeSAPUnit\": \"string\",\r\n//       \"AlternativeISOUnit\": \"string\",\r\n//       \"QuantityNumerator\": 0,\r\n//       \"QuantityDenominator\": 0,\r\n//       \"ProductVolume\": 0,\r\n//       \"VolumeUnit\": \"string\",\r\n//       \"VolumeISOUnit\": \"string\",\r\n//       \"GrossWeight\": 0,\r\n//       \"WeightUnit\": \"string\",\r\n//       \"WeightISOUnit\": \"string\",\r\n//       \"GlobalTradeItemNumber\": \"string\",\r\n//       \"GlobalTradeItemNumberCategory\": \"string\",\r\n//       \"UnitSpecificProductLength\": 0,\r\n//       \"UnitSpecificProductWidth\": 0,\r\n//       \"UnitSpecificProductHeight\": 0,\r\n//       \"ProductMeasurementUnit\": \"string\",\r\n//       \"ProductMeasurementISOUnit\": \"string\",\r\n//       \"LowerLevelPackagingUnit\": \"string\",\r\n//       \"LowerLevelPackagingISOUnit\": \"string\",\r\n//       \"MaximumStackingFactor\": 0,\r\n//       \"CapacityUsage\": 0,\r\n//       \"BaseUnit\": \"string\",\r\n//       \"BaseISOUnit\": \"string\",\r\n//     }\r\n//   ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_product/srvd_a2x/sap/product/0002/Product",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_product",
+						"srvd_a2x",
+						"sap",
+						"product",
+						"0002",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Update",
+			"id": "47183256-dcfae839-0e15-4a1f-aa2d-3ec05ab4446d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "2JgYiB0ErCZr4o2_9gnu1Q==",
+						"type": "text"
+					},
+					{
+						"key": "If-Match",
+						"value": "W/\"SADL-202511100902290000000C~20251110090229.0000000\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n//    \"ProductType\": \"string\",\r\n//    \"CreationDateTime\": \"2017-04-13T15:51:04Z\",\r\n//    \"IsMarkedForDeletion\": true,\r\n//    \"CrossPlantStatus\": \"string\",\r\n//    \"CrossPlantStatusValidityDate\": \"2017-04-13\",\r\n   \"ProductOldID\": \"ProductOldID\"\r\n//    \"GrossWeight\": 0,\r\n//    \"WeightUnit\": \"string\",\r\n//    \"WeightISOUnit\": \"string\",\r\n//    \"ProductGroup\": \"string\",\r\n//    \"BaseUnit\": \"string\",\r\n//    \"BaseISOUnit\": \"string\",\r\n//    \"ItemCategoryGroup\": \"string\",\r\n//    \"NetWeight\": 0,\r\n//    \"Division\": \"string\",\r\n//    \"VolumeUnit\": \"string\",\r\n//    \"VolumeISOUnit\": \"string\",\r\n//    \"ProductVolume\": 0,\r\n//    \"AuthorizationGroup\": \"string\",\r\n//    \"ANPCode\": \"string\",\r\n//    \"SizeOrDimensionText\": \"string\",\r\n//    \"IndustryStandardName\": \"string\",\r\n//    \"ProductStandardID\": \"string\",\r\n//    \"InternationalArticleNumberCat\": \"string\",\r\n//    \"ProductIsConfigurable\": true,\r\n//    \"IsBatchManagementRequired\": true,\r\n//    \"ExternalProductGroup\": \"string\",\r\n//    \"CrossPlantConfigurableProduct\": \"string\",\r\n//    \"SerialNoExplicitnessLevel\": \"string\",\r\n//    \"IsApprovedBatchRecordReqd\": true,\r\n//    \"HandlingIndicator\": \"string\",\r\n//    \"WarehouseProductGroup\": \"string\",\r\n//    \"WarehouseStorageCondition\": \"string\",\r\n//    \"StandardHandlingUnitType\": \"string\",\r\n//    \"SerialNumberProfile\": \"string\",\r\n//    \"IsPilferable\": true,\r\n//    \"IsRelevantForHzdsSubstances\": true,\r\n//    \"QuarantinePeriod\": 0,\r\n//    \"TimeUnitForQuarantinePeriod\": \"string\",\r\n//    \"QuarantinePeriodISOUnit\": \"string\",\r\n//    \"QualityInspectionGroup\": \"string\",\r\n//    \"HandlingUnitType\": \"string\",\r\n//    \"HasVariableTareWeight\": true,\r\n//    \"MaximumPackagingLength\": 0,\r\n//    \"MaximumPackagingWidth\": 0,\r\n//    \"MaximumPackagingHeight\": 0,\r\n//    \"MaximumCapacity\": 0,\r\n//    \"OvercapacityTolerance\": 0,\r\n//    \"UnitForMaxPackagingDimensions\": \"string\",\r\n//    \"MaxPackggDimensionISOUnit\": \"string\",\r\n//    \"BaseUnitSpecificProductLength\": 0,\r\n//    \"BaseUnitSpecificProductWidth\": 0,\r\n//    \"BaseUnitSpecificProductHeight\": 0,\r\n//    \"ProductMeasurementUnit\": \"string\",\r\n//    \"ProductMeasurementISOUnit\": \"string\",\r\n//    \"ArticleCategory\": \"string\",\r\n//    \"IndustrySector\": \"string\",\r\n//    \"DangerousGoodsIndProfile\": \"string\",\r\n//    \"ProductDocumentChangeNumber\": \"string\",\r\n//    \"ProductDocumentPageCount\": \"string\",\r\n//    \"ProductDocumentPageNumber\": \"string\",\r\n//    \"DocumentIsCreatedByCAD\": true,\r\n//    \"ProductionOrInspectionMemoTxt\": \"string\",\r\n//    \"ProductionMemoPageFormat\": \"string\",\r\n//    \"ProductIsHighlyViscous\": true,\r\n//    \"TransportIsInBulk\": true,\r\n//    \"ProdEffctyParamValsAreAssigned\": true,\r\n//    \"ProdIsEnvironmentallyRelevant\": true,\r\n//    \"LaboratoryOrDesignOffice\": \"string\",\r\n//    \"PackagingProductGroup\": \"string\",\r\n//    \"PackingReferenceProduct\": \"string\",\r\n//    \"BasicProduct\": \"string\",\r\n//    \"ProductDocumentNumber\": \"string\",\r\n//    \"ProductDocumentVersion\": \"string\",\r\n//    \"ProductDocumentType\": \"string\",\r\n//    \"ProductDocumentPageFormat\": \"string\",\r\n//    \"ProdChmlCmplncRelevanceCode\": \"string\",\r\n//    \"DiscountInKindEligibility\": \"string\",\r\n//    \"ProductManufacturerNumber\": \"string\",\r\n//    \"ManufacturerNumber\": \"string\",\r\n//    \"ManufacturerPartProfile\": \"string\",\r\n//    \"OwnInventoryManagedProduct\": \"string\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata4/sap/api_product/srvd_a2x/sap/product/0002/Product/TEST_API_ROH",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata4",
+						"sap",
+						"api_product",
+						"srvd_a2x",
+						"sap",
+						"product",
+						"0002",
+						"Product",
+						"TEST_API_ROH"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
